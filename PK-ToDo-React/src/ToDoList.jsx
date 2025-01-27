@@ -28,7 +28,12 @@ function ToDoList() {
     }
   }
 
-  function deleteTask(index) {}
+  function deleteTask(index) {
+    // If i's current index isn't equal to index I want to delete then put i into the new array of tasks
+    // If they match, filter them out
+    const updatedTasks = tasks.filter((_, i) => i !== index);
+    setTasks(updatedTasks);
+  }
 
   function moveTaskUp(index) {}
 

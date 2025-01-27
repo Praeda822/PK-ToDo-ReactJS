@@ -1,5 +1,25 @@
 # To Do List Application
 
+## Table of Contents
+
+- [To Do List Application](#to-do-list-application)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Still To Do](#still-to-do)
+  - [Features](#features)
+  - [How It Works](#how-it-works)
+    - [React's `useState` Hook](#reacts-usestate-hook)
+      - [React's `useState` Hook: `""` vs. `[]` Arguments](#reacts-usestate-hook--vs--arguments)
+    - [Callback Functions and Arrow Functions](#callback-functions-and-arrow-functions)
+  - [Application Structure](#application-structure)
+    - [Input Handling](#input-handling)
+      - [`handleInputChange`](#handleinputchange)
+    - [Adding Tasks](#adding-tasks)
+      - [`addtask` \& Updater Functions: What is an Updater Function?](#addtask--updater-functions-what-is-an-updater-function)
+    - [Task Management](#task-management)
+      - [`deleteTask`](#deletetask)
+      - [`moveTaskUp` \& `moveTaskDown`](#movetaskup--movetaskdown)
+
 ## Overview
 
 PKs **To Do List** application is a React-based project designed to help users manage tasks effectively. It leverages React’s `useState` hook for state management and provides core functionalities such as adding, deleting, and reordering tasks. This ReadMe not only documents the application’s features but also offers detailed explanations of its components and underlying React concepts to ensure clarity for both beginners and seasoned developers.

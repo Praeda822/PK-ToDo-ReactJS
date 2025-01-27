@@ -49,7 +49,19 @@ function ToDoList() {
     }
   }
 
-  function moveTaskDown(index) {}
+  function moveTaskDown(index) {
+    // Check if my passed index is already at the bottom
+    if (index < tasks.length - 1) {
+      // Create a new array to store my updated tasks
+      const updatedTasks = [...tasks];
+      // Take the current index and the index after it
+      [updatedTasks[index], updatedTasks[index + 1]] =
+        // Swap the positions of current index and following index
+        [updatedTasks[index + 1], updatedTasks[index]];
+      // Update tasks with the new, updated array
+      setTasks(updatedTasks);
+    }
+  }
 
   return (
     <div className="to-do-list">

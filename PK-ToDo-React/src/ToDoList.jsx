@@ -19,7 +19,12 @@ function ToDoList() {
     setNewTask(event.target.value);
   }
 
-  function addTask() {}
+  function addTask() {
+    if (newTask.trim() !== "") {
+      setTasks([...tasks, newTask]);
+      setNewTask("");
+    }
+  }
 
   function deleteTask(index) {}
 

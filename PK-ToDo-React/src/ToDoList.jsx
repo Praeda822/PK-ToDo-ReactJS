@@ -30,12 +30,24 @@ function ToDoList() {
 
   function deleteTask(index) {
     // If i's current index isn't equal to index I want to delete then put i into the new array of tasks
-    // If they match, filter them out
+    // If they match, filter them out (delete them)
     const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);
   }
 
-  function moveTaskUp(index) {}
+  function moveTaskUp(index) {
+    // Check if my passed index is already at the top (greater than 0)
+    if (index > 0) {
+      // Create a new array to store my updated tasks
+      const updatedTasks = [...tasks];
+      // Take the current index and the index before it
+      [updatedTasks[index], updatedTasks[index - 1]] =
+        // Swap the positions of current index and prior index
+        [updatedTasks[index - 1], updatedTasks[index]];
+      // Update tasks with the new, updated array
+      setTasks(updatedTasks);
+    }
+  }
 
   function moveTaskDown(index) {}
 

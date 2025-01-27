@@ -19,7 +19,6 @@ function ToDoList() {
     // Changed ...tasks to an updater function that takes in the current state of tasks and returns a new state
     if (newTask.trim() !== "") {
       setTasks((t) => [...t, newTask]);
-
       setNewTask("");
     }
   }

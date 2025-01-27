@@ -109,11 +109,11 @@ function deleteTask(index) {
 
 #### `moveTaskUp` & `moveTaskDown`
 
--- `moveTaskUp` and `moveTaskDown` use the `map` method to reorder tasks.
--- Both functions take in the current index of the task to be moved and create a new array of tasks, `updatedTasks`
--- Then I create a new array of tasks, `updatedTasks`, to store the updated list of tasks.
--- Then I used _array destructuring_ to swap the positions of the current index and the index either before and/or after it, respectively.
--- Finally, I update the state of `tasks` with the new array of `updatedTasks`.
+- `moveTaskUp` and `moveTaskDown` use the `map` method to reorder tasks.
+- Both functions take in the current index of the task to be moved and create a new array of tasks, `updatedTasks`
+- Then I create a new array of tasks, `updatedTasks`, to store the updated list of tasks.
+- Then I used _array destructuring_ to swap the positions of the current index and the index either before and/or after it, respectively.
+- Finally, I update the state of `tasks` with the new array of `updatedTasks`.
 
 ```javascript
 if (index > 0) {
